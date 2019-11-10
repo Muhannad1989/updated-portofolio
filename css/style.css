@@ -198,8 +198,6 @@ body {
   font-weight: bold;
   font-size: 50px;
   height: 100%;
-  /*padding-top: 50px;*/
-  /*margin-top: 350px;*/
 }
 .header .overlay .bx-wrapper .bx-viewport {
   height: 100% !important ;
@@ -210,7 +208,6 @@ body {
 }
 
 .header .overlay .bx-wrapper .bx-viewport .slider div {
-  /*background-color: red;*/
   height: 150px;
   padding-top: 35px;
 }
@@ -250,13 +247,11 @@ body {
 /*  services */
 .grade {
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
 }
 
 .services .item {
   width: 30%;
-  /* float: left; */
   padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -268,14 +263,12 @@ body {
 
 .services .item i {
   width: 30%;
-  /* float: left; */
   color: #1bbc9d;
   padding-top: 5px;
 }
 
 .services .item .info {
   width: 100%;
-  /* float: left; */
 }
 
 .services .item .info:hover {
@@ -296,13 +289,8 @@ body {
 }
 
 /* end services */
-.ourteam {
-  /* height: 250px; */
-  /* overflow: hidden; */
-}
 
 .ourteam .content {
-  /* float: left; */
   position: relative;
 }
 
@@ -321,7 +309,6 @@ body {
 }
 .ourteam .content:not(:first-child) {
   width: 15%;
-  /* height: 145px; */
   margin: 31px 1%;
 }
 
@@ -396,10 +383,6 @@ body {
   display: none;
 }
 
-/* .time .overlay .slide .act {
-  display: block;
-} */
-
 .time .overlay .slide .round {
   border-radius: 50%;
   width: 10em;
@@ -420,9 +403,6 @@ body {
 .projects {
   padding-top: 20px;
   margin-bottom: 30px;
-}
-
-.projects h2 {
 }
 
 .projects ul {
@@ -498,10 +478,6 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-
-/* .projects .gallery .mix {
-  display: none;
-} */
 
 /*end projects*/
 
@@ -639,12 +615,6 @@ body {
 /*end footer*/
 
 /*media*/
-
-/* @media (max-width: 1200px) {
-  .services .item {
-    width: 33.33333%;    
-  }
-} */
 
 @media (max-width: 992px) {
   .services .item {
