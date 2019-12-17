@@ -248,6 +248,7 @@ body {
 .grade {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .services .item {
@@ -259,12 +260,16 @@ body {
 
 .services .item h2 {
   margin: 0px;
+  text-align: center;
 }
 
 .services .item i {
   width: 30%;
   color: #1bbc9d;
   padding-top: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .services .item .info {
@@ -284,19 +289,28 @@ body {
 .separator {
   border: 1px solid #eee;
   display: block;
-  width: 700px;
+  width: 70vw;
   margin: 20px auto;
 }
 
 /* end services */
+.ourteam {
+  height: auto;
+}
+
+.res {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .ourteam .content {
   position: relative;
 }
 
 .ourteam .content:first-child {
-  width: 29%;
-  height: 200px;
+  width: 80%;
+  height: auto;
 }
 
 .ourteam .content h2 {
@@ -308,7 +322,7 @@ body {
   color: #868484;
 }
 .ourteam .content:not(:first-child) {
-  width: 15%;
+  width: 25%;
   margin: 31px 1%;
 }
 
@@ -342,7 +356,7 @@ body {
 
 /*start time section*/
 .time {
-  height: 500px;
+  height: 550px;
   background-image: url(../images/ximac.jpg);
   background-size: cover;
   position: relative;
@@ -417,6 +431,7 @@ body {
   border-radius: 3px;
   color: gray;
   cursor: pointer;
+  margin: 3px auto;
 }
 
 .projects ul li:hover {
@@ -435,6 +450,16 @@ body {
   overflow: hidden;
 }
 
+.responsive {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects .mix {
+  margin: 0 auto;
+}
+
 .projects .gallery > div {
   float: left;
   width: 32%;
@@ -442,6 +467,7 @@ body {
   height: 250px;
   margin-bottom: 20px;
   position: relative;
+  border: 2px solid gray;
 }
 
 .projects .gallery div img {
@@ -589,7 +615,11 @@ body {
     rgba(0, 0, 0, 0.35) 0%,
     rgba(0, 0, 0, 0) 80%
   );
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
   /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -629,6 +659,20 @@ body {
   .services .item h2 {
     padding-left: 8px;
   }
+  .projects .gallery > div {
+    width: 45%;
+    margin: none;
+    margin: 5px;
+  }
+  .projects .gallery div:nth-child(2),
+  .projects .gallery div:nth-child(5) {
+    margin-left: 0;
+    margin: none;
+    margin: 5px;
+  }
+  .footer .col {
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -644,6 +688,31 @@ body {
   .services .item h2 {
     padding-left: 8px;
   }
+
+  ..ourteam .content:not(:first-child) {
+    width: 25%;
+    margin: 31px 1%;
+  }
+
+  .ourteam .content:not(:first-child) {
+    width: 40%;
+  }
+
+  .time {
+    height: 650px;
+  }
+
+  .projects .gallery > div {
+    width: 75%;
+    margin: none;
+  }
+  .projects .gallery div:nth-child(2),
+  .projects .gallery div:nth-child(5) {
+    margin-left: 0;
+  }
+  .footer .col {
+    width: 50%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -658,5 +727,17 @@ body {
   }
   .services .item h2 {
     padding-left: 8px;
+  }
+  .ourteam .content:not(:first-child) {
+    width: 80%;
+  }
+  .time {
+    height: 850px;
+  }
+  /* .projects .gallery > div {
+    width: 100%;
+  } */
+  .footer .col {
+    width: 100%;
   }
 }
